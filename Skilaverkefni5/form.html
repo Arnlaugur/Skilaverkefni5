@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/landing-page.css">
+
+<script>
+function myFunction() {
+    var txt = "";
+    if (document.getElementById("phone").validity.rangeUnderflow) {
+        txt = "Value too small";
+    } else {
+        txt = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    var x = document.forms["myForm"]["femail"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    var x = document.forms["myForm"]["fphone"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="form_action.html"
+onsubmit="return myFunction()" method="post" 
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname"><br> <br>
+Email <input type="text" name="femail"><br> <br>
+Phone <input id="phone" type="number" max="10000000"> <br> <br>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
