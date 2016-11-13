@@ -38,10 +38,21 @@ function validateForm() {
 <form name="myForm" action="form_action.html"
 onsubmit="return myFunction()" method="post" 
 onsubmit="return validateForm()" method="post">
-Name: <input type="text" name="fname"><br> <br>
-Email <input type="text" name="femail"><br> <br>
-Phone <input id="phone" type="number" max="10000000"> <br> <br>
-<input type="submit" value="Submit">
+  <label for="choose">Name</label>
+  <input id="choose" name="iname">
+  <br> <br>
+  <label>Email</label>
+  <input type="email" name="iemail">
+  <br> <br>
+  <label>Phone</label>
+  <input type="phone" name="iphone">
+  <br> <br>
+  <button>Submit</button>
+</form>
+
+<form name="myForm" action="form_action.html"
+onsubmit="return myFunction()" method="post" 
+onsubmit="return validateForm()" method="post">
 </form>
 
 </body>

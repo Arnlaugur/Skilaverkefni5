@@ -35,7 +35,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/intro.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -63,7 +63,7 @@ h6 {
 
 @media(max-width:767px) {
     .intro-message {
-        padding-bottom: 15%;
+        -bottom: 15%;
     }
 
     .intro-message > h1 {
@@ -111,13 +111,14 @@ h6 {
     float: left;
     width: 200px;
     border-top: 3px solid #e7e7e7;
+
 }
 
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
-    background-size: cover;
+    background: url(../img/.jpg) no-repeat center center;
+    col-lg-5 col-sm-pull-6-size: cover;
 }
 
 .banner h2 {
@@ -167,4 +168,11 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid green;
 }
